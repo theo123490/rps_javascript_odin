@@ -26,7 +26,14 @@ function getComputerChoice() {
 }
 
 function playRound(playerSelection, computerSelection) {
-  return playsRock(computerSelection)
+  switch(playerSelection) {
+    case "rock" :
+      return playsRock(computerSelection);
+    case "scissor" :
+      return playsScissor(computerSelection);
+    case "paper" :
+      return playsPaper(computerSelection);
+  }
 }
 
 const playerSelection = "rock";
