@@ -8,10 +8,6 @@ function playsRock(playedByOponent) {
   }
 }
 
-function playRound(playerSelection, computerSelection) {
-  return playsRock(computerSelection)
-}
-
 function getComputerChoice() {
   rng_result=Math.floor( Math.random() * 100 % 3)
   if(rng_result == 0) {
@@ -23,6 +19,10 @@ function getComputerChoice() {
   } else {
     throw("computer selection failed")
   }
+}
+
+function playRound(playerSelection, computerSelection) {
+  return playsRock(computerSelection)
 }
 
 const playerSelection = "rock";
