@@ -1,5 +1,15 @@
+function playsRock(playedByOponent) {
+  if(playedByOponent=="scissor") {
+    return "win"
+  } else if (playedByOponent == "paper") {
+    return "lose"
+  } else if (playedByOponent == "rock") {
+    return "draw"
+  }
+}
+
 function playRound(playerSelection, computerSelection) {
-  // your code here!
+  return playsRock(computerSelection)
 }
 
 function getComputerChoice() {
