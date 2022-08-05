@@ -9,6 +9,8 @@ function winLoseFramework(winCondition, loseCondition, drawCondition, playedByOp
 }
 
 playsRock = (playedByOponent) => winLoseFramework("scissor", "paper", "rock", playedByOponent)
+playsScissor = (playedByOponent) => winLoseFramework("paper", "rock", "scissor", playedByOponent)
+playsPaper = (playedByOponent) => winLoseFramework("rock", "scissor", "paper", playedByOponent)
 
 function getComputerChoice() {
   rng_result=Math.floor( Math.random() * 100 % 3)
