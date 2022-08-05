@@ -33,6 +33,8 @@ function playRound(playerSelection, computerSelection) {
       return playsScissor(computerSelection);
     case "paper" :
       return playsPaper(computerSelection);
+    default:
+      throw "invalid round"
   }
 }
 
