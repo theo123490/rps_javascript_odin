@@ -10,6 +10,8 @@ function getComputerChoice() {
     return "paper"
   } else if (rng_result == 2) {
     return "scissor"
+  } else {
+    throw("computer selection failed")
   }
 }
 
