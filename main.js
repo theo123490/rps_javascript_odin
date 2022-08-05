@@ -1,12 +1,14 @@
-function playsRock(playedByOponent) {
-  if(playedByOponent=="scissor") {
+function winLoseFramework(winCondition, loseCondition, drawCondition, playedByOponent) {
+  if(playedByOponent==winCondition) {
     return "win"
-  } else if (playedByOponent == "paper") {
+  } else if (playedByOponent == loseCondition) {
     return "lose"
-  } else if (playedByOponent == "rock") {
+  } else if (playedByOponent == drawCondition) {
     return "draw"
   }
 }
+
+playsRock = (playedByOponent) => winLoseFramework("scissor", "paper", "rock", playedByOponent)
 
 function getComputerChoice() {
   rng_result=Math.floor( Math.random() * 100 % 3)
